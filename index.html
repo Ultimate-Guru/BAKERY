@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BAKERY WEBSITE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+
+    <div class="bread-loader"></div>
+  </div>
+
+  <div class="header">
+    <nav>
+      <h2 class="logo">Bakery</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Breads</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Explore</a></li>
+      </ul>
+      <a href="tel:+2348094289816" class="btn">Get Started</a>
+    </nav>
+
+    <header>
+      <div class="left">
+        <h1>Let's Buy <span class="multiple-text"></span></h1>
+        <p>
+
+          Welcome to our bakery, where every loaf tells a story of craftsmanship and passion. Explore our wide selection
+          of freshly baked breads, each made with the finest ingredients. From classic favorites to unique creations
+          like our Chocolate Chip Cookie Dough Bread, discover a taste that delights. Whether you're starting your day
+          or winding down, let our breads bring warmth to your home. Join us in celebrating the art of baking and
+          savoring moments that matter.
+        </p>
+        <a href="index2.html">Select Bread</a>
+      </div>
+      <img src="home-bread.png" />
+    </header>
+  </div>
+
+  <!-- BREADS -->
+  <section class="products">
+    <h3>New Breads:</h3>
+    <div class="product">
+      <h4>Chocolate Chip Cookie Dough Bread</h4>
+      <img src="new-bread-1.png" />
+      <p>$5.99</p>
+      <button onclick="addToCart('Cookie','Dough')">Add to Cart</button>
+    </div>
+
+    <div class="product-two">
+      <h4>Cookie Dough Bread</h4>
+      <img src="new-bread-2.png" />
+      <p>$6.33</p>
+      <button onclick="addToCart('Cookie','Dough')">Add to Cart</button>
+    </div>
+
+    <div class="product large">
+      <h4>Classic Italian Soda Bread with Garlic Butter with Rosemary</h4>
+      <img src="new-bread-3.png" />
+      <p>$7.99</p>
+      <button onclick="showDetails()">More Details</button>
+    </div>
+
+    <!-- Modal for more details-->
+    <div id="details" style="display: none">
+      <h2>Description:</h2>
+      <p>
+        This bread is made with real garlic and rosemary. It has a soft crust
+        that gives way to a fluffy interior. The dough is then shaped
+      </p>
+      <p>
+        This bread is made with real garlic from the garden of Italy. The ro
+        semary adds a subtle herbal flavor that complements the richness of
+        the garlic
+      </p>
+      <p>
+        This bread is made with real garlic from a local farmer and fresh
+        rosemary from the same farm.
+      </p>
+      <p>
+        <br />
+      </p>
+      <hr />
+      <br />
+      <h2>Ingredients:</h2>
+      <ul>
+        <li>Flour - 3 cups all purpose flour</li>
+        <li>Olive Oil - 1/4 cup olive oil</li>
+        <li>Water - 1 1/2 cups water</li>
+        <li>Garlic - 2 cloves, minced</li>
+        <li>Rosemary - 1 spring, chopped</li>
+      </ul>
+      <button onclick="hideDetails()">Close</button>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="main">
+      <img src="about-bread.png" />
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+
+          At our bakery, we blend tradition with innovation to craft artisanal breads that capture the essence of
+          homemade goodness. With a commitment to quality and taste, we take pride in sourcing the finest ingredients
+          locally and globally. Founded on a passion for baking, our team strives to create memorable experiences
+          through every loaf we bake. From our oven to your table, we invite you to indulge in flavors that define our
+          dedication to exceptional taste and wholesome baking traditions. Discover why our bakery is more than just a
+          place to buy bread—it's a community centered around sharing joy and culinary passion.
+        </p>
+        <a href="mailto: tosinbello360@gmail.com" class="talk">Let's Talk</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Buy, Explore & Enjoy Baked Food</h3>
+    <div class="right">
+      <div class="links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cooperation</a>
+        <a href="#">Sponsorship</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="social">
+        <a href="#"><i class='bx bxl-gmail'></i></a>
+        <a href="https://www.linkedin.com/in/ultimate-guru-b7b80729a/"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/Ultimate-Guru"><i class="bx bxl-github"></i></a>
+      </div>
+      <p>Copyright © 2024 Oluwatosin, All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!--- SCROLL REVEAL JS ---->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--- TYPED JS ---->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!--- MAIN JS ---->
+  <script src="script.js"></script>
+</body>
+
+</html>

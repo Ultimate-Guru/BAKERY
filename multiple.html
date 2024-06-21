@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light and Dark Mode Example</title>
+    <style>
+        body {
+            /* Default light mode styles */
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        body.dark-mode {
+            /* Dark mode styles */
+            background-color: #333333;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Bread Website</h1>
+        <button id="mode-toggle">Toggle Mode</button>
+    </header>
+
+    <section class="content">
+        <p>Welcome to our delicious bread website!</p>
+    </section>
+
+    <script>
+        const toggleButton = document.getElementById('mode-toggle');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            // Save preference to localStorage
+            const isDarkMode = body.classList.contains('dark-mode');
+            localStorage.setItem('dark-mode-preference', isDarkMode);
+        });
+
+        // On page load, set initial mode based on stored preference
+        const storedPreference = localStorage.getItem('dark-mode-preference');
+
+        if (storedPreference === 'true') {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
+
+    </script>
+</body>
+
+</html>
